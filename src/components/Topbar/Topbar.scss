@@ -1,0 +1,40 @@
+.topbar {
+   height: 47px; /* igual à medição */
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+
+  &__container {
+    width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 0 80px; 
+
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  font-size: 14px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    strong {
+      color:#3019B2; 
+      font-weight: 600;
+      font-size: 12px;
+    }
+    span{
+      color: #9F9F9F;
+      font-weight: 500;
+       font-size: 12px;
+    }
+  }
+
+  &__icon {
+    font-size: 14px;
+  }
+}

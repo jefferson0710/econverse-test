@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+body { font-family: 'Poppins', sans-serif; background: #fff; color: #111; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}

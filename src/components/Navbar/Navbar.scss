@@ -1,0 +1,45 @@
+.navbar {
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.12);
+  
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    gap: 91px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9F9F9F;
+    
+  }
+
+  &__link {
+    font-weight: 600;
+
+    &:hover {
+      color:#3019B2;
+    }
+  }
+  .navbar__link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 12px;
+}
+
+.navbar__icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  
+}
+.navbar__link.is-active {
+  color: #2b2bff; /* azul do ativo */
+}
+
+}
