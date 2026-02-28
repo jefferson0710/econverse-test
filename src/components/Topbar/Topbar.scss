@@ -1,40 +1,44 @@
 .topbar {
-   height: 47px; /* igual à medição */
+  height: 2.9375rem; 
   display: flex;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
 
   &__container {
     width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 75rem; 
+    margin: 0 auto;
 
-  padding: 0 80px; 
+    padding: 0 5rem; 
 
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.75rem; 
+
+    font-size: 0.875rem;
   }
 
   &__item {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 0.5625rem; 
 
     strong {
-      color:#3019B2; 
+      color: #3019b2;
       font-weight: 600;
-      font-size: 12px;
+      font-size: 0.75rem; 
     }
-    span{
-      color: #9F9F9F;
+
+    span {
+      color: #9f9f9f;
       font-weight: 500;
-       font-size: 12px;
+      font-size: 0.75rem;
     }
   }
 
   &__icon {
-    font-size: 14px;
+    font-size: 0.875rem; 
+    line-height: 1;
   }
 }
