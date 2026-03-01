@@ -1,8 +1,9 @@
-import Topbar from "../../components/Topbar/Topbar"
-import Header from "../../components/Header/Header"
-import NavBar from "../../components/Navbar/NavBar"
-import HeroBanner from "../../components/HeroBanner/HeroBanner"
-import "./home.scss"
+import Topbar from "../../components/Topbar/Topbar";
+import Header from "../../components/Header/Header";
+import NavBar from "../../components/Navbar/NavBar";
+import HeroBanner from "../../components/HeroBanner/HeroBanner";
+import "./home.scss";
+import CategorySection from "../../components/CategorySection/CategorySection";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <NavBar />
       <main className="page__main">
         <HeroBanner />
+        <CategorySection />
       </main>
     </div>
-  )
+  );
 }
