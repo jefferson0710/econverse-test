@@ -1,0 +1,142 @@
+.shelf {
+  width: 100%;
+  background: #fff;
+  padding: 2.5rem 0;
+}
+
+.shelf__container {
+  max-width: 1281px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.shelf__header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.shelf__line {
+  flex: 1;
+  height: 0.0625rem;
+  background: #f0f0f0;
+}
+
+.shelf__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 14rem;
+}
+
+.shelf__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3019b2;
+  line-height: 1.2;
+}
+
+.shelf__subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #111;
+  text-decoration: none;
+}
+
+.shelf__tabs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border: 0.0625rem solid #e9e9e9;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.shelf__tab {
+  height: 2.5rem;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9f9f9f;
+  border-right: 0.0625rem solid #e9e9e9;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  &:hover {
+    color: #3019b2;
+  }
+
+  &.is-active {
+    color: #3019b2;
+    font-weight: 800;
+  }
+}
+
+.shelf__carousel {
+  position: relative;
+  overflow: visible;
+}
+
+.shelf__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.shelf__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.12);
+  z-index: 10;
+
+  svg {
+    display: block;
+  }
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+}
+
+.shelf__arrow--left {
+  left: -3rem;
+}
+
+.shelf__arrow--right {
+  right: -3rem;
+}
+
+
+@media (max-width: 64rem) {
+  .shelf__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shelf__tabs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shelf__carousel {
+    padding: 0 2.25rem;
+  }
+}

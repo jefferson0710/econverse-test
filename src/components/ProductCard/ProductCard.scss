@@ -7,10 +7,12 @@
   display: grid;
   gap: 0.5rem;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .card__img {
-  width: 278.1px;
+  width:100%;
   height: 228px;
   object-fit: contain;
   display: block;
@@ -58,7 +60,7 @@
   margin-top: 0.5rem;
   height: 2.75rem;
   border: 0;
-  width: 17.24rem;
+  width: 100%;
   border-radius: 0.25rem;
   background:#3442B5;
   color: #fff;
@@ -66,4 +68,8 @@
   font-size: 0.875rem;
   cursor: pointer;
   text-transform: uppercase;
+  display:flex ;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
