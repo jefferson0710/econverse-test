@@ -1,0 +1,69 @@
+.card {
+  background: #fff;
+  border: 1px solid #ededed;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.375rem 1.125rem rgba(0, 0, 0, 0.22);
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.card__img {
+  width: 278.1px;
+  height: 228px;
+  object-fit: contain;
+  display: block;
+}
+
+.card__name {
+  font-size: 0.9375rem;
+  color: #3F3F40;
+  font-weight: 300;
+
+}
+
+.card__prices {
+  display: grid;
+  gap: 2px;
+}
+
+.card__old {
+   font-size: 0.75rem;
+  font-weight: 400;
+  color: #808080;
+  text-decoration: line-through;
+  margin-top: 12px;
+}
+
+.card__price {
+  font-size: 1.25rem;
+  color: #3F3F40;
+  font-weight: 700;
+}
+
+.card__inst {
+  font-size: 0.75rem;
+  color: #3F3F40;
+  font-weight: 400;
+}
+
+.card__ship {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #3442B5;
+}
+
+.card__btn {
+  margin-top: 0.5rem;
+  height: 2.75rem;
+  border: 0;
+  width: 17.24rem;
+  border-radius: 0.25rem;
+  background:#3442B5;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
