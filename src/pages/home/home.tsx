@@ -8,6 +8,7 @@ import ProductShelf from "../../components/ProductShelf/ProductShelf";
 import PartnersSection from "../../components/PartnersSection/PartnersSection";
 import BrandSection from "../../components/BrandSection/BrandSection";
 import Newsletter from "../../components/Newsletter/Newsletter";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <BrandSection />
         <ProductShelf showTabs={false} showSubtitle />
         <Newsletter />
+        <Footer />
       </main>
     </div>
   );
