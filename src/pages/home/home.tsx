@@ -6,6 +6,8 @@ import "./home.scss";
 import CategorySection from "../../components/CategorySection/CategorySection";
 import ProductShelf from "../../components/ProductShelf/ProductShelf";
 import PartnersSection from "../../components/PartnersSection/PartnersSection";
+import BrandSection from "../../components/BrandSection/BrandSection";
+import Newsletter from "../../components/Newsletter/Newsletter";
 
 export default function Home() {
   return (
@@ -18,7 +20,11 @@ export default function Home() {
         <CategorySection />
         <ProductShelf />
         <PartnersSection />
-        <ProductShelf />
+        <ProductShelf showTabs={false} showSubtitle />
+        <PartnersSection />
+        <BrandSection />
+        <ProductShelf showTabs={false} showSubtitle />
+        <Newsletter />
       </main>
     </div>
   );
